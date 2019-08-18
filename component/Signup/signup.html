@@ -44,27 +44,98 @@
                 <div class="col-sm">
                     <form>
                         <div class="form-group">
-                            <label for="nameForm">Nombre</label>
-                            <input type="text" class="form-control" id="nameForm" required>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <label for="nameForm">Nombre</label>
+                                    <input type="text" class="form-control" id="nameForm" required>
+                                </div>
+                                <div class="col-sm">
+                                    <label for="lastnameForm">Apellido</label>
+                                    <input type="text" class="form-control" id="lastnameForm" required>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="lastnameForm">Apellido</label>
-                            <input type="text" class="form-control" id="lastnameForm">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <label for="dniForm">DNI</label>
+                                    <input type="number" class="form-control" id="dniForm" required>
+                                </div>
+                                <div class="col-sm">
+                                    <label for="exampleInputEmail1">Direccion de mail</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" required>
+                                    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu mail con
+                                        nadie</small>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="dniForm">DNI</label>
-                            <input type="number" class="form-control" id="dniForm" required>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <label for="exampleInputPassword1">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                </div>
+                                <div class="col-sm">
+                                    <label for="confirmPassword1">Confirma tu Contraseña</label>
+                                    <input type="password" class="form-control" id="confirmPassword1" required>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Direccion de mail</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu mail con
-                                nadie</small>
+                        <div class="row justify-content-md">
+                            <div class="col-sm">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Tarjeta de credito
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        Tarjeta de debito
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Contraseña</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        <div class="row" style="margin-top: 15px;">
+                            <div class="col-sm">
+                                <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="cardNumber">Numero de tarjeta</label>
+                                    <div class="input-group">
+                                        <input type="tel" class="form-control" name="cardNumber"
+                                            placeholder="Numero de tarjeta valido" autocomplete="cc-number" required
+                                            autofocus />
+                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="cardExpiry"><span class="hidden-xs">Fecha de vencimiento</span></label>
+                                    <input type="tel" class="form-control" name="cardExpiry" placeholder="MM / YY"
+                                        autocomplete="cc-exp" required />
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="cardCVC">Codigo CV</label>
+                                    <input type="tel" class="form-control" name="cardCVC" placeholder="CVC"
+                                        autocomplete="cc-csc" required />
+                                </div>
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

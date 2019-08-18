@@ -1,8 +1,4 @@
-/* body {
-    background-image: url('https://i0.wp.com/clipset.20minutos.es/wp-content/uploads/2017/01/parking.jpg?fit=986%2C600&ssl=1');
-    background-repeat: no-repeat;
-    background-size: cover;
-} */html {
+html {
   height:100%;
 }
 
@@ -12,7 +8,7 @@ body {
 
 .icon-truck:before {
     content: "\e9b0";
-  }
+}
 
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
@@ -40,15 +36,15 @@ body {
   border-radius:.25em;
   box-shadow:0 0 .25em rgba(0,0,0,.25);
   box-sizing:border-box;
-  left:50%;
-  padding:10vmin;
-  position:fixed;
-  text-align:center;
-  top:50%;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
   transform:translate(-50%, -50%);
 }
 
-h1 {
+h1, h3 {
   font-family:monospace;
 }
 
